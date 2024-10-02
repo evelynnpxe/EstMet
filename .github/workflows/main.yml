@@ -24,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ var.DOCKERHUB_USERNAME }}/estmet:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/estmet:latest
